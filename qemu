@@ -1,8 +1,8 @@
 linux  без графики - qemu-system-x86_64 -m 2048 \
-  -kernel /home/kion/freedomUI/arch/x86/boot/bzImage \
-  -initrd /home/kion/freedomUI.initramfs.cpio.gz \
+  -kernel /home/ваш_пользователь/linux-6.8.1/arch/x86/boot/bzImage \
+  -initrd /home/ваш_пользователь/freedomUI.initramfs.cpio.gz \
   -append "console=ttyS0" \
   -serial mon:stdio -display none
 
-с графикой - qemu-system-x86_64 -m 2048 -cdrom /home/kion/freedomUI.iso
+с графикой - qemu-system-x86_64 -m 2048 -cdrom /home/ваш_пользователь/freedomUI.iso
 
